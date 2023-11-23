@@ -134,6 +134,41 @@
         <!-- Kurs Start -->
         <section class="kurs">
             <div class="container">
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Kursga ro’yhatdan o’tish</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="modal-body__from" action="#">
+                                    <div class="modal-body__from__div">
+                                        <button>Bepul maslahat uchun ariza qoldirish</button>
+                                        <button><span>Front-End</span> kursi uchun ariza</button>
+                                        <button><span>Back-End</span> kursi uchun ariza</button>
+                                        <button><span>Dizayn</span> kursi uchun ariza</button>
+                                        <button><span>Foundation</span> kursi uchun ariza</button>
+                                        <button><span>Marketing</span> kursi uchun ariza</button>
+                                    </div>
+
+                                    <b>Formani to’ldiring</b>
+                                    <input type="text" placeholder="Ism" required>
+                                    <input type="number" placeholder="Telefon" required>
+                                    <input type="number" placeholder="Yosh" required>
+
+                                    <button class="btn" type="submit">Arizani yuborish</button>
+                                    <p>Tugmani bosish orqali men 3 tomon ma’lumotlarini qayta ishlash
+                                        qonun qoidalariga rozilik bildiraman.</p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h2 class="container__title">Ta’lim yo’nalishlari</h2>
                 <div class="container__list">
                     <div class="container__list__item">
@@ -159,9 +194,10 @@
                             <img src="./assets/img/teachers.png" alt="">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
-                        <a class="container__list__item__link" href="#">
+                        <button class="container__list__item__link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        </button>
                     </div>
                     <div class="container__list__item">
                         <h3 class="container__list__item__title">Front-End</h3>
@@ -186,9 +222,10 @@
                             <img src="./assets/img/teachers.png" alt="">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
-                        <a class="container__list__item__link" href="#">
+                        <button class="container__list__item__link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        </button>
                     </div>
                     <div class="container__list__item">
                         <h3 class="container__list__item__title">Front-End</h3>
@@ -197,9 +234,10 @@
                             <img src="./assets/img/teachers.png" alt="">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
-                        <a class="container__list__item__link" href="#">
+                        <button class="container__list__item__link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        </button>
                     </div>
                     <div class="container__list__item">
                         <h3 class="container__list__item__title">Front-End</h3>
@@ -208,9 +246,10 @@
                             <img src="./assets/img/teachers.png" alt="">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
-                        <a class="container__list__item__link" href="#">
+                        <button class="container__list__item__link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        </button>
                     </div>
                     <div class="container__list__item">
                         <h3 class="container__list__item__title">Front-End</h3>
@@ -219,9 +258,10 @@
                             <img src="./assets/img/teachers.png" alt="">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
-                        <a class="container__list__item__link" href="#">
+                        <button class="container__list__item__link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        </button>
                     </div>
 
                 </div>
