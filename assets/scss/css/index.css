@@ -140,6 +140,11 @@ li {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 360px) {
+  .header .container__nav__number a {
+    font-size: 20px;
+  }
+}
 .intro {
   margin-top: 95px;
   padding: 26px 0 60px;
@@ -432,6 +437,14 @@ li {
     height: auto;
   }
 }
+@media only screen and (max-width: 380px) {
+  .kurs-info .container .list__left {
+    height: auto;
+  }
+  .kurs-info .container .list__left p {
+    font-size: 20px;
+  }
+}
 .kurs {
   padding-bottom: 70px;
 }
@@ -715,6 +728,18 @@ li {
     width: 300px;
     padding: 0.1rem;
     font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 382px) {
+  .test .container__list__left__title {
+    font-size: 1.4rem;
+  }
+  .test .container__list__left__title span {
+    width: 250px;
+    font-size: 1.4rem;
+  }
+  .test .container__list__left__btn {
+    width: 90%;
   }
 }
 .footer {

@@ -147,3 +147,25 @@
         }
     }
 }
+
+@media only screen and (max-width: 382px) {
+    .test {
+        .container {
+            &__list {
+                &__left {
+                    &__title {
+                        font-size: 1.4rem;
+                        span {
+                            width: 250px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                    &__btn{
+                        width: 90%;
+
+                    }
+                }
+            }
+        }
+    }
+}
