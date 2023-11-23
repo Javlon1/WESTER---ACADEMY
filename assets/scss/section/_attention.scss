@@ -1,7 +1,7 @@
 @import "../utilities/variables";
 
 .attention {
-    padding-bottom: 140px;
+    padding-bottom: 40px;
 
     .container {
         &__title {
@@ -49,6 +49,13 @@
                     position: absolute;
                     right: 2rem;
                     bottom: 2rem;
+                }
+
+                &:nth-child(2) {
+                    background-color: #CFFF80 !important;
+                    background-image: url("../../img/item-2.png");
+                    background-repeat: no-repeat;
+                    background-position: bottom;
                 }
             }
         }
@@ -120,17 +127,17 @@
 }
 
 
-.item2 {
-    background-color: #CFFF80 !important;
-    background-image: url("../../img/item-2.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
+// .item2 {
+//     background-color: #CFFF80 !important;
+//     background-image: url("../../img/item-2.png");
+//     background-repeat: no-repeat;
+//     background-position: bottom;
 
-    p {
-        display: none;
-    }
+//     p {
+//         display: none;
+//     }
 
-    a {
-        display: none !important;
-    }
-}
+//     a {
+//         display: none !important;
+//     }
+// }
