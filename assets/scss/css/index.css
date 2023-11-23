@@ -6,6 +6,11 @@
   outline: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   justify-content: space-between;
@@ -292,17 +297,17 @@ li {
     height: 300px;
   }
 }
-.kurs {
+.kurs-info {
   padding-bottom: 70px;
 }
-.kurs .container .list {
+.kurs-info .container .list {
   display: flex;
   justify-content: space-between;
   background-color: #F2F2F2;
   border-radius: 1.5rem;
   padding: 1.5rem;
 }
-.kurs .container .list__left {
+.kurs-info .container .list__left {
   height: auto;
   background-image: url("../../img/kurs-bc.png");
   background-repeat: no-repeat;
@@ -312,13 +317,13 @@ li {
   padding: 1.5rem;
   width: 50%;
 }
-.kurs .container .list__left p {
+.kurs-info .container .list__left p {
   color: #fff;
   font-size: 27px;
   font-weight: 500;
   line-height: 31px;
 }
-.kurs .container .list__right__list li {
+.kurs-info .container .list__right__list li {
   margin-top: 2rem;
   width: 400px;
   border-radius: 1rem;
@@ -326,12 +331,12 @@ li {
   padding: 1rem;
   position: relative;
 }
-.kurs .container .list__right__list li h3 {
+.kurs-info .container .list__right__list li h3 {
   font-size: 27px;
   font-weight: 500;
   line-height: 30px;
 }
-.kurs .container .list__right__list li a {
+.kurs-info .container .list__right__list li a {
   display: block;
   width: 40px;
   height: 40px;
@@ -345,33 +350,33 @@ li {
   right: 1rem;
   bottom: 1rem;
 }
-.kurs .container .list__right__list li b {
+.kurs-info .container .list__right__list li b {
   display: block;
   color: #8D46F6;
   font-size: 27px;
   font-weight: 500;
 }
-.kurs .container .list__right__list li span {
+.kurs-info .container .list__right__list li span {
   margin-top: 1rem;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.kurs .container .list__right__list li span img {
+.kurs-info .container .list__right__list li span img {
   width: 20%;
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.kurs .container .list__right__list li:first-child {
+.kurs-info .container .list__right__list li:first-child {
   margin-top: 0;
   background: radial-gradient(50% 50% at 50% 50%, #EAEED5 0%, #46C1F6 24.08%, #638FF6 43.31%, #7C63F6 69.61%, #8D46F6 100%);
 }
-.kurs .container .list__right__list li:first-child h3 {
+.kurs-info .container .list__right__list li:first-child h3 {
   color: #fff;
 }
-.kurs .container .list__right__list li:first-child p {
+.kurs-info .container .list__right__list li:first-child p {
   font-size: 1rem;
   font-weight: 500;
   margin-top: 1rem;
@@ -379,53 +384,181 @@ li {
 }
 
 @media only screen and (max-width: 991px) {
-  .kurs .container .list {
+  .kurs-info .container .list {
     flex-direction: column;
   }
-  .kurs .container .list__left {
+  .kurs-info .container .list__left {
     width: 100%;
     height: 250px;
     background-size: 250px;
   }
-  .kurs .container .list__right {
+  .kurs-info .container .list__right {
     margin-top: 2rem;
   }
-  .kurs .container .list__right__list {
+  .kurs-info .container .list__right__list {
     display: flex;
     justify-content: space-between;
   }
-  .kurs .container .list__right__list li {
+  .kurs-info .container .list__right__list li {
     margin-top: 0;
     width: 30%;
   }
-  .kurs .container .list__right__list li h3 {
+  .kurs-info .container .list__right__list li h3 {
     font-size: 20px;
   }
-  .kurs .container .list__right__list li b {
+  .kurs-info .container .list__right__list li b {
     font-size: 20px;
   }
-  .kurs .container .list__right__list li:first-child p {
+  .kurs-info .container .list__right__list li:first-child p {
     font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 767px) {
-  .kurs .container .list__left {
+  .kurs-info .container .list__left {
     background-size: 170px;
   }
-  .kurs .container .list__right {
+  .kurs-info .container .list__right {
     margin-top: 1rem;
   }
-  .kurs .container .list__right__list {
+  .kurs-info .container .list__right__list {
     display: block;
   }
-  .kurs .container .list__right__list li {
+  .kurs-info .container .list__right__list li {
     margin-top: 1.4rem;
     width: 100%;
   }
 }
 @media only screen and (max-width: 410px) {
-  .kurs .container .list__left {
+  .kurs-info .container .list__left {
     height: auto;
+  }
+}
+.kurs {
+  padding-bottom: 70px;
+}
+.kurs .container__title {
+  color: #292929;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+.kurs .container__list {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.kurs .container__list__item {
+  margin-top: 1.5rem;
+  width: 32%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: url("../../img/kurs/bc-1.png"), url("../../img/kurs/bc-2.png");
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-color: #F2F2F2;
+  position: relative;
+}
+.kurs .container__list__item__title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #292929;
+}
+.kurs .container__list__item__frem {
+  margin-top: 3rem;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.kurs .container__list__item__frem li img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.kurs .container__list__item__teach {
+  margin-top: 1.2rem;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.kurs .container__list__item__teach img {
+  width: 120px;
+  height: 57px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.kurs .container__list__item__teach p {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+.kurs .container__list__item__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #292929;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+.kurs .container__list__item:first-child {
+  width: 49%;
+  background-color: #FFFE77;
+}
+.kurs .container__list__item:nth-child(2) {
+  width: 49%;
+  background-color: #C2FFA6;
+}
+
+@media only screen and (max-width: 991px) {
+  .kurs .container__title {
+    font-size: 40px;
+  }
+  .kurs .container__list__item {
+    width: 32%;
+  }
+  .kurs .container__list__item__title {
+    font-size: 30px;
+  }
+  .kurs .container__list__item__teach {
+    width: 80%;
+  }
+  .kurs .container__list__item__teach p {
+    font-size: 18px;
+  }
+  .kurs .container__list__item:first-child {
+    width: 49%;
+    background-color: #FFFE77;
+  }
+  .kurs .container__list__item:nth-child(2) {
+    width: 49%;
+    background-color: #C2FFA6;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .kurs .container__list__item {
+    width: 100%;
+  }
+  .kurs .container__list__item__teach {
+    width: 90%;
+  }
+  .kurs .container__list__item:first-child {
+    width: 100%;
+    background-color: #FFFE77;
+  }
+  .kurs .container__list__item:nth-child(2) {
+    width: 100%;
+    background-color: #C2FFA6;
   }
 }
 .footer {
