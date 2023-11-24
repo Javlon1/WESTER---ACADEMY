@@ -106,9 +106,11 @@ function displayData(pageNumber) {
         <li>
             <p class="icon"><i class="bi bi-caret-right-fill"></i></p>
 
-            <video id="player" class="video" playsinline controls>
-                <source src="https://mazwai.com/videvo_files/video/free/2014-11/small_watermarked/matt_devir--one_minute_drive_preview.webm"/>
-            </video>
+            <div class="plyr__video-embed video" id="player">
+                <iframe
+                    src="https://mazwai.com/videvo_files/video/free/2014-11/small_watermarked/matt_devir--one_minute_drive_preview.webm"
+                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+            </div>
             
             <p class="name">${item}</p>
         </li>
