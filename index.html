@@ -38,7 +38,7 @@
             <nav class="container__nav">
                 <div>
                     <a href="#">
-                        <img src="./assets/img/logo.png" alt="logo">
+                        <img src="./assets/img/logo.png" alt="logo" loading="lazy">
                     </a>
                 </div>
                 <div class="container__nav__number">
@@ -67,8 +67,29 @@
         <!-- Intro End -->
 
         <!-- Pop-Up Start -->
-        <div>
-            
+        <div id="pop-up-close" onclick="closeModal()"></div>
+        <div class="pop-up" id="pop-up">
+            <form class="pop-up__form" action="#">
+                <div class="pop-up__form__top">
+                    <h3>IT ga birinchi qadam shu yerdan boshlanadi!</h3>
+                    <p onclick="closeModal()">
+                        <img src="./assets/img/x.png" alt="">
+                    </p>
+                </div>
+                <p class="pop-up__form__subtitle">Qay masalada yordam kerak ?</p>
+                <ul class="pop-up__form__list">
+                    <li class="pop-up__form__list__item actF">
+                        <p>Konsultatsiya</p>
+                    </li>
+                    <li class="pop-up__form__list__item">
+                        <p>Kurslar haqida</p>
+                    </li>
+                </ul>
+                <input class="pop-up__form__inp" type="text" placeholder="Ismingiz" required>
+                <input class="pop-up__form__inp" type="number" placeholder="Yoshingiz" required>
+                <input class="pop-up__form__inp" type="number" placeholder="Telefon" required>
+                <button class="pop-up__form__btn" type="submit">Yuborish</button>
+            </form>
         </div>
         <!-- Pop-Up End -->
 
@@ -125,10 +146,10 @@
                             <li>
                                 <h3>Kurslar dasturi bozor talabiga javob beradi</h3>
                                 <span>
-                                    <img src="./assets/img/kurs1.png" alt="">
-                                    <img src="./assets/img/kurs2.png" alt="">
-                                    <img src="./assets/img/kurs3.png" alt="">
-                                    <img src="./assets/img/kurs4.png" alt="">
+                                    <img src="./assets/img/kurs1.png" alt="" loading="lazy">
+                                    <img src="./assets/img/kurs2.png" alt="" loading="lazy">
+                                    <img src="./assets/img/kurs3.png" alt="" loading="lazy">
+                                    <img src="./assets/img/kurs4.png" alt="" loading="lazy">
                                 </span>
                             </li>
                         </ul>
@@ -183,23 +204,23 @@
                         <h3 class="container__list__item__title">Front-End</h3>
                         <ul class="container__list__item__frem">
                             <li>
-                                <img src="./assets/img/react.png" alt="">
+                                <img src="./assets/img/react.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/react.png" alt="">
+                                <img src="./assets/img/react.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/react.png" alt="">
+                                <img src="./assets/img/react.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/react.png" alt="">
+                                <img src="./assets/img/react.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/react.png" alt="">
+                                <img src="./assets/img/react.png" alt="" loading="lazy">
                             </li>
                         </ul>
                         <div class="container__list__item__teach">
-                            <img src="./assets/img/teachers.png" alt="">
+                            <img src="./assets/img/teachers.png" alt="" loading="lazy">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
                         <button class="container__list__item__link" data-bs-toggle="modal"
@@ -211,23 +232,23 @@
                         <h3 class="container__list__item__title">Front-End</h3>
                         <ul class="container__list__item__frem">
                             <li>
-                                <img src="./assets/img/python.png" alt="">
+                                <img src="./assets/img/python.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/python.png" alt="">
+                                <img src="./assets/img/python.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/python.png" alt="">
+                                <img src="./assets/img/python.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/python.png" alt="">
+                                <img src="./assets/img/python.png" alt="" loading="lazy">
                             </li>
                             <li>
-                                <img src="./assets/img/python.png" alt="">
+                                <img src="./assets/img/python.png" alt="" loading="lazy">
                             </li>
                         </ul>
                         <div class="container__list__item__teach">
-                            <img src="./assets/img/teachers.png" alt="">
+                            <img src="./assets/img/teachers.png" alt="" loading="lazy">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
                         <button class="container__list__item__link" data-bs-toggle="modal"
@@ -239,7 +260,7 @@
                         <h3 class="container__list__item__title">Front-End</h3>
 
                         <div class="container__list__item__teach">
-                            <img src="./assets/img/teachers.png" alt="">
+                            <img src="./assets/img/teachers.png" alt="" loading="lazy">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
                         <button class="container__list__item__link" data-bs-toggle="modal"
@@ -251,7 +272,7 @@
                         <h3 class="container__list__item__title">Front-End</h3>
 
                         <div class="container__list__item__teach">
-                            <img src="./assets/img/teachers.png" alt="">
+                            <img src="./assets/img/teachers.png" alt="" loading="lazy">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
                         <button class="container__list__item__link" data-bs-toggle="modal"
@@ -263,7 +284,7 @@
                         <h3 class="container__list__item__title">Front-End</h3>
 
                         <div class="container__list__item__teach">
-                            <img src="./assets/img/teachers.png" alt="">
+                            <img src="./assets/img/teachers.png" alt="" loading="lazy">
                             <p>3+ mentorlar TOP kompaniyalardan</p>
                         </div>
                         <button class="container__list__item__link" data-bs-toggle="modal"
@@ -287,7 +308,7 @@
                         <button class="container__list__left__btn">Testni boshlash</button>
                     </div>
                     <div class="container__list__right">
-                        <img class="container__list__right__img" src="./assets/img/test-bc.png" alt="">
+                        <img class="container__list__right__img" src="./assets/img/test-bc.png" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -299,7 +320,7 @@
             <div class="container">
                 <div class="container__item">
                     <div class="container__item__top">
-                        <img src="./assets/img/How.png" alt="">
+                        <img src="./assets/img/How.png" alt="" loading="lazy">
                     </div>
                     <div class="container__item__left">
                         <h3>IT da o’zingiz uchun eng ma’qul kasb egasi bo’ling</h3>
@@ -310,7 +331,7 @@
                         <p>Quyidagi grafikda siz bu qanday ketma-ketlikda amalga oshishini ko’rishingiz mumkin</p>
                     </div>
                     <div class="container__item__right">
-                        <img src="./assets/img/How.png" alt="">
+                        <img src="./assets/img/How.png" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -333,37 +354,37 @@
                 </div>
                 <ul class="container__list">
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 1</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 2</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 3</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 4</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 5</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 5</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
                     <li class="container__list__slider">
-                        <img src="./assets/img/clients/gif.gif" alt="">
+                        <img src="./assets/img/clients/gif.gif" alt="" loading="lazy">
                         <h4>Islambek Sharipov 5</h4>
                         <p>ex-Product Director, Manager</p>
                     </li>
@@ -395,42 +416,51 @@
                     hamkorlarga yo’naltiramiz</p>
                 <ul class="container__list">
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → aic-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → aic-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → alphabank-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → alphabank-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → deliveryclub-black.svg.png"
-                            alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → deliveryclub-black.svg.png loading="
+                            lazy"" alt="">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → grape-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → grape-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → mailru-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → mailru-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → qsoft-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → qsoft-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → rambler-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → rambler-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → red_mad_robot-black.svg.png"
-                            alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → red_mad_robot-black.svg.png loading="
+                            lazy"" alt="">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → vkontakte-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → vkontakte-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → wildberries-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → wildberries-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Main → Section → List → Item → yula-black.svg.png" alt="">
+                        <img src="./assets/img/clients/Main → Section → List → Item → yula-black.svg.png" alt=""
+                            loading="lazy">
                     </li>
                     <li class="container__list__img">
-                        <img src="./assets/img/clients/Vector (2).png" alt="">
+                        <img src="./assets/img/clients/Vector (2).png" alt="" loading="lazy">
                     </li>
                 </ul>
             </div>
@@ -516,7 +546,7 @@
         <div class="container">
             <div class="container__logo">
                 <a href="#">
-                    <img src="./assets/img/logo.png" alt="logo">
+                    <img src="./assets/img/logo.png" alt="logo" loading="lazy">
                 </a>
             </div>
             <div class="container__list">

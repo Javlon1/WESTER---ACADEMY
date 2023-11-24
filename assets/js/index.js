@@ -108,10 +108,11 @@ function displayData(pageNumber) {
 
             <div class="plyr__video-embed video" id="player">
                 <iframe
+                    loading="lazy"
                     src="https://mazwai.com/videvo_files/video/free/2014-11/small_watermarked/matt_devir--one_minute_drive_preview.webm"
                     allowfullscreen allowtransparency allow="autoplay"></iframe>
             </div>
-            
+
             <p class="name">${item}</p>
         </li>
         `;
@@ -148,3 +149,22 @@ function displayPagination(currentPage) {
 // Начальная отрисовка данных и пагинации
 displayData(1);
 displayPagination(1);
+
+
+function openModal() {
+    document.getElementById('pop-up').style.display = 'flex';
+    document.getElementById('pop-up-close').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('pop-up').style.display = 'none';
+    document.getElementById('pop-up-close').style.display = 'none';
+    document.body.style.overflow = 'visible'; // or 'auto'
+}
+
+const popUp = () => {
+    openModal()
+    document.body.style.overflow = 'hidden';
+}
+// 12000
+setTimeout(popUp, 12000);
