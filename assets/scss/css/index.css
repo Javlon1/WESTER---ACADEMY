@@ -1010,11 +1010,10 @@ li {
   border-radius: 0.5rem;
 }
 .teachers .container__list__slider img {
-  margin-top: 0.1rem;
   width: 300px;
   height: 300px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
 }
 .teachers .container__list__slider h4 {
