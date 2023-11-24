@@ -105,7 +105,11 @@ function displayData(pageNumber) {
         li.innerHTML = `
         <li>
             <p class="icon"><i class="bi bi-caret-right-fill"></i></p>
-            <video class="video" autoplay src="https://mazwai.com/videvo_files/video/free/2014-11/small_watermarked/matt_devir--one_minute_drive_preview.webm"></video>
+            
+            <video class="video"  controls autoplay muted loop>
+                <source src="https://mazwai.com/videvo_files/video/free/2014-11/small_watermarked/matt_devir--one_minute_drive_preview.webm">
+            </video>
+            
             <p class="name">${item}</p>
         </li>
         `;
