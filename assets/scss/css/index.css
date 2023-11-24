@@ -1142,6 +1142,7 @@ li {
   border: 1px solid #ccc;
   border-radius: 3px;
   background-color: #fff;
+  color: #292929;
   cursor: pointer;
 }
 .review .container .pagination button:hover {
