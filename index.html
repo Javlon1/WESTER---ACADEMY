@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WESTER - ACADEMY</title>
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,9 +68,11 @@
 
         <!-- Pop-Up Start -->
         <div>
-                <video controls autoplay muted loop>
-                    <source src="">
-                </video>
+            <div class="plyr__video-embed video" id="player">
+                <iframe
+                    src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+            </div>
         </div>
         <!-- Pop-Up End -->
 
@@ -565,6 +569,7 @@
 
     <!-- JS -->
     <script src="assets/js/index.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 </body>
 
 </html>

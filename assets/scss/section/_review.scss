@@ -29,8 +29,9 @@
                     position: absolute;
                     top: .8rem;
                     left: .8rem;
-                    width: 32px;
-                    height: 32px;
+                    z-index: 99;
+                    width: 40px;
+                    height: 40px;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
@@ -48,7 +49,7 @@
                 .name {
                     position: absolute;
                     bottom: .8rem;
-                    right: .8rem;
+                    left: .8rem;
                     background-color: $white;
                     border-radius: 1rem;
                     padding: .3rem 1rem;

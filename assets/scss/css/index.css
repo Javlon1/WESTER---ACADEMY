@@ -1104,8 +1104,9 @@ li {
   position: absolute;
   top: 0.8rem;
   left: 0.8rem;
-  width: 32px;
-  height: 32px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1122,7 +1123,7 @@ li {
 .review .container__items li .name {
   position: absolute;
   bottom: 0.8rem;
-  right: 0.8rem;
+  left: 0.8rem;
   background-color: #fff;
   border-radius: 1rem;
   padding: 0.3rem 1rem;
