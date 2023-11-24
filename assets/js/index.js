@@ -164,4 +164,4 @@ const popUp = () => {
     document.body.style.overflow = 'hidden';
 }
 // 12000
-setTimeout(popUp, 120000);
+setTimeout(popUp, 10000);
