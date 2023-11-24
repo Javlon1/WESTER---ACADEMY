@@ -1192,8 +1192,8 @@ li {
   top: 0.8rem;
   left: 0.8rem;
   z-index: 99;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1209,8 +1209,8 @@ li {
 }
 .review .container__items li .name {
   position: absolute;
-  bottom: 0.8rem;
-  left: 0.8rem;
+  bottom: 1rem;
+  right: 1rem;
   background-color: #fff;
   border-radius: 1rem;
   padding: 0.3rem 1rem;
