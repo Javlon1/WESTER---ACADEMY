@@ -163,5 +163,6 @@ const popUp = () => {
     openModal()
     document.body.style.overflow = 'hidden';
 }
+
 // 12000
-setTimeout(popUp, 10000);
+setTimeout(popUp, 100000);
