@@ -185,6 +185,9 @@ li {
   }
 }
 @media only screen and (max-width: 991px) {
+  .intro {
+    padding: 26px 0 25px;
+  }
   .intro .container__list__item {
     width: 90%;
   }
@@ -281,6 +284,7 @@ li {
     font-size: 40px;
   }
   .attention .container__list {
+    margin-top: 10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
@@ -288,15 +292,18 @@ li {
     margin-top: 30px;
     width: 45%;
   }
+  .attention .container__list__item:nth-child(2) {
+    order: -1 !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .attention .container__list {
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .attention .container__list__item {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     height: 300px;
   }
@@ -388,6 +395,9 @@ li {
 }
 
 @media only screen and (max-width: 991px) {
+  .kurs-info {
+    padding-bottom: 25px;
+  }
   .kurs-info .container .list {
     flex-direction: column;
   }
@@ -419,7 +429,7 @@ li {
 }
 @media only screen and (max-width: 767px) {
   .kurs-info .container .list__left {
-    background-size: 170px;
+    background-size: 150px;
   }
   .kurs-info .container .list__right {
     margin-top: 1rem;
@@ -434,6 +444,7 @@ li {
 }
 @media only screen and (max-width: 410px) {
   .kurs-info .container .list__left {
+    background-size: 100px;
     height: auto;
   }
 }
@@ -464,9 +475,14 @@ li {
   border: 2px solid #F2F2F2;
   background-color: transparent;
   border-radius: 0.5rem;
+  transition: 0.5s all ease;
 }
 .kurs .container .modal-body__from__div button span {
   font-weight: 800;
+}
+.kurs .container .modal-body__from__div button:hover {
+  color: #fff;
+  background-color: #292929;
 }
 .kurs .container .modal-body__from b {
   color: #292929;
@@ -582,8 +598,14 @@ li {
 }
 
 @media only screen and (max-width: 991px) {
+  .kurs {
+    padding-bottom: 25px;
+  }
   .kurs .container__title {
     font-size: 40px;
+  }
+  .kurs .container__list {
+    margin-top: 20px;
   }
   .kurs .container__list__item {
     width: 32%;
@@ -622,6 +644,11 @@ li {
     background-color: #C2FFA6;
   }
 }
+.active {
+  color: #fff !important;
+  background-color: #292929 !important;
+}
+
 .test {
   padding-bottom: 70px;
 }
@@ -690,6 +717,9 @@ li {
   }
 }
 @media only screen and (max-width: 991px) {
+  .test {
+    padding-bottom: 30px;
+  }
   .test .container__list__left {
     width: 100%;
     display: flex;
@@ -774,6 +804,7 @@ li {
   font-weight: 400;
 }
 .how .container__item__right {
+  margin-left: 1rem;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -787,6 +818,9 @@ li {
 }
 
 @media only screen and (max-width: 991px) {
+  .how {
+    padding: 1rem 0 2rem;
+  }
   .how .container__item {
     background-color: #F2F2F2;
     border-radius: 1.5rem;
@@ -797,7 +831,7 @@ li {
     display: flex;
     align-items: center;
     background-color: #fff;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 100%;
   }
   .how .container__item__top img {
@@ -807,6 +841,8 @@ li {
   }
   .how .container__item__left {
     width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
   }
   .how .container__item__right {
     display: none;

@@ -37,6 +37,7 @@
             }
 
             &__right {
+                margin-left: 1rem;
                 display: flex;
                 align-items: center;
                 background-color: $white;
@@ -54,6 +55,8 @@
 
 @media only screen and (max-width: 991px) {
     .how {
+        padding: 1rem 0 2rem;
+
         .container {
             &__item {
                 background-color: $gray;
@@ -65,9 +68,9 @@
                     display: flex;
                     align-items: center;
                     background-color: $white;
-                    border-radius: 2rem;
+                    border-radius: 1rem;
                     width: 100%;
-    
+
                     img {
                         width: 100%;
                         object-fit: cover;
@@ -76,6 +79,8 @@
 
                 &__left {
                     width: 100%;
+                    margin-top: 1rem;
+                    border-radius: 1rem;
                 }
 
                 &__right {

@@ -111,6 +111,7 @@
 
 @media only screen and (max-width: 991px) {
     .kurs-info {
+        padding-bottom: 25px;
         .container {
             .list {
                 flex-direction: column;
@@ -158,7 +159,7 @@
         .container {
             .list {
                 &__left {
-                    background-size: 170px;
+                    background-size: 150px;
                 }
 
                 &__right {
@@ -183,6 +184,8 @@
         .container {
             .list {
                 &__left {
+                    background-size: 100px;
+
                     height: auto;
                 }
             }
@@ -197,7 +200,8 @@
             .list {
                 &__left {
                     height: auto;
-                    p{
+
+                    p {
                         font-size: 20px;
                     }
                 }
