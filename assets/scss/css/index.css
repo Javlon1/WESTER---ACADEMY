@@ -1121,7 +1121,7 @@ li {
 .review .container__items li .name {
   position: absolute;
   bottom: 0.8rem;
-  left: 0.8rem;
+  right: 0.8rem;
   background-color: #fff;
   border-radius: 1rem;
   padding: 0.3rem 1rem;
@@ -1173,7 +1173,7 @@ li {
     font-size: 25px;
   }
   .review .container__items li {
-    width: 100%;
+    width: 90%;
   }
 }
 .footer {

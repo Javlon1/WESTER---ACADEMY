@@ -48,7 +48,7 @@
                 .name {
                     position: absolute;
                     bottom: .8rem;
-                    left: .8rem;
+                    right: .8rem;
                     background-color: $white;
                     border-radius: 1rem;
                     padding: .3rem 1rem;
@@ -129,7 +129,7 @@
 
             &__items {
                 li {
-                    width: 100%;
+                    width: 90%;
                 }
             }
         }
