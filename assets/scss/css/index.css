@@ -889,6 +889,9 @@ li {
   }
 }
 @media only screen and (max-width: 991px) {
+  .collaborator {
+    padding-bottom: 30px;
+  }
   .collaborator .container__title {
     width: 100%;
   }
@@ -917,14 +920,36 @@ li {
     width: 100%;
   }
 }
+.faq {
+  padding-bottom: 70px;
+}
 .faq .container__title {
   text-align: center;
   font-size: 45px;
   font-weight: 500;
   color: #292929;
+  margin-bottom: 3rem;
 }
-.faq .container ul {
-  margin-top: 4rem;
+.faq .container .button {
+  color: #292929;
+  background-color: #fff;
+  border: none;
+  height: 70px;
+  width: 100%;
+  text-align: start;
+  padding-left: 1rem;
+  border-bottom: 1px solid #F2F2F2;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.myActive {
+  color: #fff !important;
+  background-color: #292929 !important;
+  outline: none;
 }
 
 .footer {

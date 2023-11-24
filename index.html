@@ -155,7 +155,7 @@
                                         <button><span>Foundation</span> kursi uchun ariza</button>
                                         <button><span>Marketing</span> kursi uchun ariza</button>
                                     </div>
-  
+
                                     <b>Formani to’ldiring</b>
                                     <input type="text" placeholder="Ism" required>
                                     <input type="number" placeholder="Telefon" required>
@@ -363,9 +363,73 @@
         <section class="faq">
             <div class="container">
                 <h2 class="container__title">Savol javoblar</h2>
-                <ul>
-                    <li>assa</li>
-                </ul>
+                <div class="accordion" id="faqAccordion">
+                    
+                    <!-- Вопрос 1 -->   
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Bu soha menga to’g’ri keladimi ?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Mendan nimalar kerak bo’ladi?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsetri" aria-expanded="false" aria-controls="collapsetri">
+                                Qanday kompyuter kerak bo’ladi?
+                            </button>
+                        </h2>
+                        <div id="collapsetri" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsechtiri" aria-expanded="false" aria-controls="collapsechtiri">
+                                Kim meni o’qitadi?
+                            </button>
+                        </h2>
+                        <div id="collapsechtiri" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- Faq End -->
@@ -439,7 +503,6 @@
 
     <!-- JS -->
     <script src="assets/js/index.js"></script>
-
 </body>
 
 </html>
