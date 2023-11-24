@@ -23,24 +23,15 @@ scrollUp.addEventListener("click", () => {
 
 // Добавляем обработчик событий для отслеживания изменения состояния аккордеона 
 document.addEventListener('shown.bs.collapse', function (event) {
-    var activeHeader = event.target.parentElement.querySelector('.button');
+    var activeHeader = event.target.parentElement.querySelector('.butt');
     if (activeHeader) {
-        activeHeader.classList.add('myActive');
+        activeHeader.classList.add('myActivee');
     }
 });
 
 document.addEventListener('hidden.bs.collapse', function (event) {
-    var activeHeader = event.target.parentElement.querySelector('.button');
+    var activeHeader = event.target.parentElement.querySelector('.butt');
     if (activeHeader) {
-        activeHeader.classList.remove('myActive');
+        activeHeader.classList.remove('myActivee');
     }
 }); 
-
-
-document.addEventListener("DOMContentLoaded", function () { 
-    // Развернуть первый элемент аккордеона 
-    var firstAccordionItem = document.querySelector('.accordion-item:first-child'); 
-    var firstCollapse = firstAccordionItem.querySelector('.accordion-collapse'); 
-     
-    firstCollapse.classList.add('myActive'); 
-});

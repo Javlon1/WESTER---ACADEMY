@@ -930,7 +930,7 @@ li {
   color: #292929;
   margin-bottom: 3rem;
 }
-.faq .container .button {
+.faq .container .butt {
   color: #292929;
   background-color: #fff;
   border: none;
@@ -946,7 +946,16 @@ li {
   text-align: left;
 }
 
-.myActive {
+@media only screen and (max-width: 991px) {
+  .faq {
+    padding-bottom: 40px;
+  }
+  .faq .container__title {
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+}
+.myActivee {
   color: #fff !important;
   background-color: #292929 !important;
   outline: none;
