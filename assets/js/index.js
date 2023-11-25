@@ -35,56 +35,54 @@ document.addEventListener('hidden.bs.collapse', function (event) {
     }
 });
 
-// const initSlider = () => {
-//     const sliderList = document.querySelector(".container__list")
-//     const slideButtons = document.querySelectorAll(".container__top__button")
+// slider start
+let position = 0;
+const slidesToShow = 4;
+const slidesToScroll = 2;
+const container = document.querySelector(".slider-container");
+const track = document.querySelector(".slider-container__list");
+const items = document.querySelectorAll(".slider-container__list__slider");
+const btnPrev = document.getElementById("prev");
+const btnNext = document.getElementById("next");
 
-//     slideButtons.forEach((button) => {
-//         button.addEventListener("click", () => {
-//         })
-//     })
-// }
+const itemsCount = items.length;
+const itemWidth = container.clientWidth / slidesToShow;
+const movePosition = slidesToScroll * itemWidth;
 
-// window.addEventListener("load", initSlider)
-
-// const sliderList = document.querySelector(".container__list")
-
-// const goPrev = () => {
-//     const direction = -1
-//     const scrollAmount = `${200 * direction}px`
-//     console.log(scrollAmount);
-//     sliderList.scrollBy({ left: scrollAmount, behavior: "smooth" })
-// }
-
-// const goNext = () => {
-//     const direction = 1
-//     const scrollAmount = `${200 * direction}px`
-//     console.log(scrollAmount);
-//     sliderList.scrollBy({ left: 200})
-// }
-
-const sliderList = document.querySelector(".container__list")
-const btnPrev = document.getElementById("prev")
-const btnNext = document.getElementById("next")
-
-sliderList.addEventListener("whell", (e) => {
-    e.preventDefault()
-    sliderList.scrollLeft += e.deltaY
-})
 
 btnNext.addEventListener("click", () => {
-    sliderList.scrollLeft += 300
-    console.log("n");
-})
+    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
+    position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+    setPosition();
+    checkBtns();
+});
 
 btnPrev.addEventListener("click", () => {
-    sliderList.scrollLeft -= 300
-    console.log("p");
-})
+    const itemsLeft = Math.abs(position) / itemWidth;
 
+    position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+    setPosition();
+    checkBtns();
+});
+
+const setPosition = () => {
+    track.style.transform = `translateX(${position}px)`;
+};
+
+const checkBtns = () => {
+    btnPrev.disabled = position === 0;
+    btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+};
+
+
+checkBtns();
+// slider end
 
 // датези шу ерга ташасез болди 
-const data = Array.from({ length: 40 }, (_, i) => `Item ${i + 1}`);
+const data = Array.from({ length: 20 }, (_, i) => `Item ${i + 1}`);
 
 const itemsPerPage = 4;
 
@@ -158,6 +156,6 @@ const popUp = () => {
     document.body.style.overflow = 'hidden';
 }
 
-const time = 100000
+const time = 40000
 
 setTimeout(popUp, time);
