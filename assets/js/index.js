@@ -81,64 +81,6 @@ const checkBtns = () => {
 checkBtns();
 // slider end
 
-// датези шу ерга ташасез болди 
-const data = Array.from({ length: 20 }, (_, i) => `Item ${i + 1}`);
-
-const itemsPerPage = 4;
-
-function displayData(pageNumber) {
-    const dataList = document.getElementById('dataList');
-    dataList.innerHTML = ``;
-
-    const start = (pageNumber - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    const pageData = data.slice(start, end);
-
-    pageData.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-        <li>
-            <p class="icon"><i class="bi bi-caret-right-fill"></i></p>
-
-            <video class="video" autoplay controls>
-                <source autoplay src="https://mazwai.com/videvo_files/video/free/2014-11/small_watermarked/matt_devir--one_minute_drive_preview.webm" type="video/mp4">
-            </video>
-
-            <p class="name">${item}</p>
-        </li>
-        `;
-        dataList.appendChild(li);
-    });
-}
-
-function displayPagination(currentPage) {
-    const pagination = document.getElementById('pagination');
-    pagination.innerHTML = '';
-
-    const totalPages = Math.ceil(data.length / itemsPerPage);
-
-    for (let i = 1; i <= totalPages; i++) {
-        const li = document.createElement('li');
-        const a = document.createElement('button');
-        a.textContent = i;
-
-        if (i === currentPage) {
-            a.classList.add('active');
-        }
-
-        a.addEventListener('click', function () {
-            displayData(i);
-            displayPagination(i);
-        });
-
-        li.appendChild(a);
-        pagination.appendChild(li);
-    }
-}
-
-displayData(1);
-displayPagination(1);
-
 
 function openModal() {
     document.getElementById('pop-up').style.display = 'flex';
