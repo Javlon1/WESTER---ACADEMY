@@ -83,15 +83,11 @@ btnPrev.addEventListener("click", () => {
 })
 
 
+// датези шу ерга ташасез болди 
+const data = Array.from({ length: 40 }, (_, i) => `Item ${i + 1}`);
 
-
-// Ваш массив данных (замените на свои данные)
-const data = Array.from({ length: 30 }, (_, i) => `Item ${i + 1}`);
-
-// Количество элементов на одной странице
 const itemsPerPage = 4;
 
-// Отображение данных на странице
 function displayData(pageNumber) {
     const dataList = document.getElementById('dataList');
     dataList.innerHTML = ``;
@@ -117,7 +113,6 @@ function displayData(pageNumber) {
     });
 }
 
-// Отображение кнопок пагинации
 function displayPagination(currentPage) {
     const pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
@@ -143,7 +138,6 @@ function displayPagination(currentPage) {
     }
 }
 
-// Начальная отрисовка данных и пагинации
 displayData(1);
 displayPagination(1);
 
