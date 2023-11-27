@@ -572,15 +572,16 @@
 
     </main>
 
-    <audio id="myAudio" src="./assets/img/voice/voice.ogg"></audio>
+    <audio id="myAudio">
+        <source src="./assets/img/voice/voice.ogg" type="audio/mp3">
+        Ваш браузер не поддерживает аудио тег.
+    </audio>
     <button class="voice">
-        <img class="voice__img actVoice"
-            src="./assets/img/voice/voice.png" alt="">
-        <img class="voice__video" 
+        <img class="voice__img actVoice" src="./assets/img/voice/voice.png" alt="">
+        <img class="voice__video"
             src="https://cdn.dribbble.com/users/407851/screenshots/2718256/media/cd1bea24bdc2b82e6916458f3eea9ce6.gif"
             alt="">
     </button>
-
     <!-- scroll-up Start -->
     <div class="scroll-up">
         <svg class='scroll-up__svg' viewBox='-2 -2 52 52'>

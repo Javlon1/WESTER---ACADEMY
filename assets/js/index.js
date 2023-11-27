@@ -8,14 +8,15 @@ window.addEventListener('scroll', () => {
     } else {
         scrollUp.classList.remove("active")
     }
-}) 
-
+})
+// voice start
 const voiceImg = document.querySelector(".voice__img")
 const voiceGif = document.querySelector(".voice__video")
 const audio = document.getElementById("myAudio");
 const voice = document.querySelector(".voice")
 
-voice.addEventListener("click",()=>{
+
+voice.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
         voiceImg.classList.remove("actVoice")
@@ -26,6 +27,7 @@ voice.addEventListener("click",()=>{
         voiceGif.classList.remove("actVoice")
     }
 })
+// voice end
 
 scrollUp.addEventListener("click", () => {
     window.scrollTo({
@@ -113,6 +115,6 @@ const popUp = () => {
     document.body.style.overflow = 'hidden';
 }
 
-const time = 40000
+const time = 30000
 
 setTimeout(popUp, time);
