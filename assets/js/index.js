@@ -17,12 +17,12 @@ const audio = document.getElementById("myAudio");
 function toggleAudio() { 
   if (audio.paused) { 
     audio.play(); 
-    voiceImg.classList.add("actVoice")
-    voiceGif.classList.remove("actVoice")
-  } else { 
-    audio.pause(); 
     voiceImg.classList.remove("actVoice")
     voiceGif.classList.add("actVoice")
+  } else { 
+    audio.pause(); 
+    voiceImg.classList.add("actVoice")
+    voiceGif.classList.remove("actVoice")
   } 
 } 
 
