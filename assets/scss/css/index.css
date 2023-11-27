@@ -29,21 +29,6 @@ body {
   z-index: 1000;
 }
 
-.actVoice {
-  display: flex !important;
-}
-
-.activeVideo {
-  width: 120px !important;
-  height: 200px !important;
-}
-.activeVideo .voice__video {
-  display: none !important;
-}
-.activeVideo .voice__container {
-  display: flex !important;
-}
-
 .voice {
   box-shadow: 0 0 3px #292929;
   cursor: pointer;
@@ -66,82 +51,17 @@ body {
   border-radius: 0.5rem;
 }
 .voice__container {
-  display: none;
+  display: flex;
   align-items: center;
   padding-top: 0.4rem;
 }
-.voice__container__section1 {
+.voice__container__section {
   display: none;
   align-items: center;
   flex-direction: column;
   background-color: red;
 }
-.voice__container__section1__video {
-  width: 120px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.5rem;
-}
-.voice__container__section2 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  background-color: black;
-}
-.voice__container__section2__video {
-  width: 120px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.5rem;
-}
-.voice__container__section3 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  background-color: greenyellow;
-}
-.voice__container__section3__video {
-  width: 120px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.5rem;
-}
-.voice__container__section4 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  background-color: gold;
-}
-.voice__container__section4__video {
-  width: 120px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.5rem;
-}
-.voice__container__section5 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  background-color: green;
-}
-.voice__container__section5__video {
-  width: 120px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.5rem;
-}
-.voice__container__section6 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  background-color: blue;
-}
-.voice__container__section6__video {
+.voice__container__section__video {
   width: 120px;
   height: 60px;
   -o-object-fit: cover;
