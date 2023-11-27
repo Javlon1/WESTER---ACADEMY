@@ -1,10 +1,10 @@
 const offSet = 100;
 const offSetSection1 = 0;
-const offSetSection2 = 400;
-const offSetSection3 = 1400;
-const offSetSection4 = 2200;
-const offSetSection5 = 3500;
-const offSetSection6 = 5000;
+const offSetSection2 = 500;
+const offSetSection3 = 2300;
+const offSetSection4 = 3600;
+const offSetSection5 = 5200;
+const offSetSection6 = 7100;
 
 const scrollUp = document.querySelector(".scroll-up")
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -23,6 +23,7 @@ voice.addEventListener("click", () => {
 })
 
 window.addEventListener('scroll', () => {
+    console.log(getTop());
     if (getTop() > offSet) {
         scrollUp.classList.add("active")
         if (getTop() <= offSetSection1) {
