@@ -1,13 +1,81 @@
 const offSet = 100;
+const offSetSection1 = 0;
+const offSetSection2 = 400;
+const offSetSection3 = 1400;
+const offSetSection4 = 2200;
+const offSetSection5 = 3500;
+const offSetSection6 = 5000;
+
 const scrollUp = document.querySelector(".scroll-up")
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+const voiceSection1 = document.querySelector(".voice__container__section1")
+const voiceSection2 = document.querySelector(".voice__container__section2")
+const voiceSection3 = document.querySelector(".voice__container__section3")
+const voiceSection4 = document.querySelector(".voice__container__section4")
+const voiceSection5 = document.querySelector(".voice__container__section5")
+const voiceSection6 = document.querySelector(".voice__container__section6")
 
+// activeVideo
+const voice = document.querySelector(".voice")
+
+voice.addEventListener("click", ()=>{
+    voice.classList.toggle("activeVideo")
+})
 
 window.addEventListener('scroll', () => {
     if (getTop() > offSet) {
         scrollUp.classList.add("active")
+        if (getTop() <= offSetSection1) {
+            voiceSection1.classList.add("actVoice")
+            voiceSection2.classList.remove("actVoice")
+            voiceSection3.classList.remove("actVoice")
+            voiceSection4.classList.remove("actVoice")
+            voiceSection5.classList.remove("actVoice")
+            voiceSection6.classList.remove("actVoice")
+        } else if (getTop() <= offSetSection2) {
+            voiceSection1.classList.remove("actVoice")
+            voiceSection2.classList.add("actVoice")
+            voiceSection3.classList.remove("actVoice")
+            voiceSection4.classList.remove("actVoice")
+            voiceSection5.classList.remove("actVoice")
+            voiceSection6.classList.remove("actVoice")
+        } else if (getTop() <= offSetSection3) {
+            voiceSection1.classList.remove("actVoice")
+            voiceSection2.classList.remove("actVoice")
+            voiceSection3.classList.add("actVoice")
+            voiceSection4.classList.remove("actVoice")
+            voiceSection5.classList.remove("actVoice")
+            voiceSection6.classList.remove("actVoice")
+        } else if (getTop() <= offSetSection4) {
+            voiceSection1.classList.remove("actVoice")
+            voiceSection2.classList.remove("actVoice")
+            voiceSection3.classList.remove("actVoice")
+            voiceSection4.classList.add("actVoice")
+            voiceSection5.classList.remove("actVoice")
+            voiceSection6.classList.remove("actVoice")
+        } else if (getTop() <= offSetSection5) {
+            voiceSection1.classList.remove("actVoice")
+            voiceSection2.classList.remove("actVoice")
+            voiceSection3.classList.remove("actVoice")
+            voiceSection4.classList.remove("actVoice")
+            voiceSection5.classList.add("actVoice")
+            voiceSection6.classList.remove("actVoice")
+        } else if (getTop() <= offSetSection6) {
+            voiceSection1.classList.remove("actVoice")
+            voiceSection2.classList.remove("actVoice")
+            voiceSection3.classList.remove("actVoice")
+            voiceSection4.classList.remove("actVoice")
+            voiceSection5.classList.remove("actVoice")
+            voiceSection6.classList.add("actVoice")
+        }
     } else {
         scrollUp.classList.remove("active")
+        voiceSection1.classList.add("actVoice")
+        voiceSection2.classList.remove("actVoice")
+        voiceSection3.classList.remove("actVoice")
+        voiceSection4.classList.remove("actVoice")
+        voiceSection5.classList.remove("actVoice")
+        voiceSection6.classList.remove("actVoice")
     }
 })
 
@@ -47,7 +115,7 @@ const btnNext = document.getElementById("next");
 
 const itemsCount = items.length;
 const itemWidth = 320 //container.clientWidth / slidesToShow;
-const movePosition = container.clientWidth === 400 ? 320 : container.clientWidth === 767? 600 : slidesToScroll * itemWidth;
+const movePosition = container.clientWidth === 400 ? 320 : container.clientWidth === 767 ? 600 : slidesToScroll * itemWidth;
 
 
 btnNext.addEventListener("click", () => {
