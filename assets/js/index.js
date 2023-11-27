@@ -18,7 +18,7 @@ const voiceSection6 = document.querySelector(".voice__container__section6")
 // activeVideo
 const voice = document.querySelector(".voice")
 
-voice.addEventListener("click", ()=>{
+voice.addEventListener("click", () => {
     voice.classList.toggle("activeVideo")
 })
 

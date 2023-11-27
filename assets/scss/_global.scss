@@ -31,7 +31,7 @@ body {
 }
 
 .actVoice {
-  display: block !important;
+  display: flex !important;
 }
 
 .activeVideo {
@@ -62,7 +62,6 @@ body {
   left: 40px;
   bottom: 40px;
   transition: $transition;
-
   &__video {
     width: 70px;
     height: 50px;
@@ -77,10 +76,11 @@ body {
 
     &__section1 {
       display: none;
-
+      align-items: center;
+      
       &__video {
         width: 120px;
-        height: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -88,10 +88,11 @@ body {
 
     &__section2 {
       display: none;
-
+      align-items: center;
+      
       &__video {
         width: 120px;
-        height: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -99,10 +100,11 @@ body {
 
     &__section3 {
       display: none;
-
+      align-items: center;
+      
       &__video {
         width: 120px;
-        height: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -110,10 +112,11 @@ body {
 
     &__section4 {
       display: none;
-
+      align-items: center;
+      
       &__video {
         width: 120px;
-        height: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -121,10 +124,11 @@ body {
 
     &__section5 {
       display: none;
-
+      align-items: center;
+      
       &__video {
         width: 120px;
-        height: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -132,10 +136,11 @@ body {
 
     &__section6 {
       display: none;
-
+      align-items: center;
+      
       &__video {
         width: 120px;
-        height: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem;
       }

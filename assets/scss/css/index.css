@@ -30,7 +30,7 @@ body {
 }
 
 .actVoice {
-  display: block !important;
+  display: flex !important;
 }
 
 .activeVideo {
@@ -72,60 +72,66 @@ body {
 }
 .voice__container__section1 {
   display: none;
+  align-items: center;
 }
 .voice__container__section1__video {
   width: 120px;
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
 .voice__container__section2 {
   display: none;
+  align-items: center;
 }
 .voice__container__section2__video {
   width: 120px;
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
 .voice__container__section3 {
   display: none;
+  align-items: center;
 }
 .voice__container__section3__video {
   width: 120px;
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
 .voice__container__section4 {
   display: none;
+  align-items: center;
 }
 .voice__container__section4__video {
   width: 120px;
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
 .voice__container__section5 {
   display: none;
+  align-items: center;
 }
 .voice__container__section5__video {
   width: 120px;
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
 .voice__container__section6 {
   display: none;
+  align-items: center;
 }
 .voice__container__section6__video {
   width: 120px;
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
