@@ -334,10 +334,13 @@ li {
   }
 }
 @media only screen and (max-width: 575px) {
+  .intro .container__list {
+    background-size: 270px;
+  }
   .intro .container__list__item__title {
     font-size: 1.7rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 32px;
   }
 }
 .attention {

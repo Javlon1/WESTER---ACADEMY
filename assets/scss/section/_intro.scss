@@ -105,12 +105,13 @@
     .intro {
         .container {
             &__list {
+                background-size: 270px;
                 &__item {
 
                     &__title {
                         font-size: 1.7rem;
                         font-weight: 600;
-                        line-height: 30px;
+                        line-height: 32px;
                     }
                 }
             }
