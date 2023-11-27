@@ -571,12 +571,13 @@
         <!-- Faq End -->
 
     </main>
-
-    <audio id="myAudio" src="./assets/img/voice/voice.ogg" type="audio/npm3"></audio>
+    <audio id="myAudio">
+        <source src="./assets/img/voice/voice.ogg" type="audio/npm3">
+    </audio>
     <button class="voice" onclick="toggleAudio()">
-        <img class="voice__img actVoice"
+        <img class="voice__img"
             src="./assets/img/voice/voice.png" alt="">
-        <img class="voice__video" 
+        <img class="voice__video actVoice" 
             src="https://cdn.dribbble.com/users/407851/screenshots/2718256/media/cd1bea24bdc2b82e6916458f3eea9ce6.gif"
             alt="">
     </button>
