@@ -62,10 +62,10 @@ body {
   left: 40px;
   bottom: 40px;
   transition: $transition;
+
   &__video {
     width: 70px;
     height: 50px;
-    // background-color: red;
     border-radius: .5rem;
   }
 
@@ -77,10 +77,12 @@ body {
     &__section1 {
       display: none;
       align-items: center;
-      
+      flex-direction: column;
+      background-color: red;
+
       &__video {
         width: 120px;
-        height: 100px;
+        height: 60px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -89,10 +91,12 @@ body {
     &__section2 {
       display: none;
       align-items: center;
-      
+      flex-direction: column;
+      background-color: black;
+
       &__video {
         width: 120px;
-        height: 100px;
+        height: 60px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -101,10 +105,12 @@ body {
     &__section3 {
       display: none;
       align-items: center;
-      
+      flex-direction: column;
+      background-color: greenyellow;
+
       &__video {
         width: 120px;
-        height: 100px;
+        height: 60px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -113,10 +119,12 @@ body {
     &__section4 {
       display: none;
       align-items: center;
-      
+      flex-direction: column;
+      background-color: gold;
+
       &__video {
         width: 120px;
-        height: 100px;
+        height: 60px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -125,10 +133,12 @@ body {
     &__section5 {
       display: none;
       align-items: center;
-      
+      flex-direction: column;
+      background-color: green;
+
       &__video {
         width: 120px;
-        height: 100px;
+        height: 60px;
         object-fit: cover;
         border-radius: .5rem;
       }
@@ -137,10 +147,12 @@ body {
     &__section6 {
       display: none;
       align-items: center;
-      
+      flex-direction: column;
+      background-color: blue;
+
       &__video {
         width: 120px;
-        height: 100px;
+        height: 60px;
         object-fit: cover;
         border-radius: .5rem;
       }
