@@ -12,19 +12,19 @@ window.addEventListener('scroll', () => {
 
 const voiceImg = document.querySelector(".voice__img")
 const voiceGif = document.querySelector(".voice__video")
-const audio = document.getElementById("myAudio"); 
- 
-function toggleAudio() { 
-  if (audio.paused) { 
-    audio.play(); 
-    voiceImg.classList.remove("actVoice")
-    voiceGif.classList.add("actVoice")
-  } else { 
-    audio.pause(); 
-    voiceImg.classList.add("actVoice")
-    voiceGif.classList.remove("actVoice")
-  } 
-} 
+const audio = document.getElementById("myAudio");
+
+const toggleAudio = () => {
+    if (audio.paused) {
+        audio.play();
+        voiceImg.classList.remove("actVoice")
+        voiceGif.classList.add("actVoice")
+    } else {
+        audio.pause();
+        voiceImg.classList.add("actVoice")
+        voiceGif.classList.remove("actVoice")
+    }
+}
 
 scrollUp.addEventListener("click", () => {
     window.scrollTo({
