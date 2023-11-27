@@ -8,13 +8,14 @@ window.addEventListener('scroll', () => {
     } else {
         scrollUp.classList.remove("active")
     }
-})
+}) 
 
 const voiceImg = document.querySelector(".voice__img")
 const voiceGif = document.querySelector(".voice__video")
 const audio = document.getElementById("myAudio");
+const voice = document.querySelector(".voice")
 
-const toggleAudio = () => {
+voice.addEventListener("click",()=>{
     if (audio.paused) {
         audio.play();
         voiceImg.classList.remove("actVoice")
@@ -24,7 +25,7 @@ const toggleAudio = () => {
         voiceImg.classList.add("actVoice")
         voiceGif.classList.remove("actVoice")
     }
-}
+})
 
 scrollUp.addEventListener("click", () => {
     window.scrollTo({
