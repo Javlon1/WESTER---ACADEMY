@@ -9,6 +9,7 @@
             background: linear-gradient(264deg, #4BD0A0 30.9%, #cefaeb 79.77%);
             border-radius: 1.7rem;
             padding: 1.7rem;
+            height: 350px;
             display: flex;
             align-items: center;
             position: relative;
@@ -36,7 +37,7 @@
                 &__btn {
                     width: 260px;
                     margin-top: 2rem;
-                    padding: .5rem 0;
+                    padding: .5rem 1rem;
                     color: $white;
                     background-color: $black;
                     border: transparent;
