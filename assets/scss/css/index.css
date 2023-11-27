@@ -333,6 +333,13 @@ li {
     margin-top: 34px;
   }
 }
+@media only screen and (max-width: 575px) {
+  .intro .container__list__item__title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
 .attention {
   padding-bottom: 40px;
 }

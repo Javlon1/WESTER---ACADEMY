@@ -98,3 +98,22 @@
         }
     }
 }
+
+
+
+@media only screen and (max-width: 575px) {
+    .intro {
+        .container {
+            &__list {
+                &__item {
+
+                    &__title {
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
