@@ -45,10 +45,11 @@ body {
   z-index: 1000;
   left: 40px;
   bottom: 40px;
+  background-color: red;
 }
 .voice__img {
   display: none;
-  width: 70px;
+  width: 60px;
   height: 50px;
   border-radius: 0.5rem;
 }
