@@ -29,43 +29,33 @@ body {
   z-index: 1000;
 }
 
+.actVoice {
+  display: block !important;
+}
+
 .voice {
   box-shadow: 0 0 3px #292929;
   cursor: pointer;
   width: 70px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: none;
   border-radius: 0.5rem;
   background-color: #F2F2F2;
   position: fixed;
   z-index: 1000;
   left: 40px;
   bottom: 40px;
-  transition: 0.5s all ease;
 }
-.voice__video {
+.voice__img {
+  display: none;
   width: 70px;
   height: 50px;
   border-radius: 0.5rem;
 }
-.voice__container {
-  display: flex;
-  align-items: center;
-  padding-top: 0.4rem;
-}
-.voice__container__section {
+.voice__video {
   display: none;
-  align-items: center;
-  flex-direction: column;
-  background-color: red;
-}
-.voice__container__section__video {
-  width: 120px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 70px;
+  height: 50px;
   border-radius: 0.5rem;
 }
 

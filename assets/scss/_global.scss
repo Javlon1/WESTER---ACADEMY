@@ -30,49 +30,38 @@ body {
   z-index: 1000;
 }
 
+.actVoice{
+  display: block !important;
+}
 
 .voice {
   box-shadow: 0 0 3px $black;
   cursor: pointer;
   width: 70px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: none;
   border-radius: .5rem;
   background-color: $gray;
   position: fixed;
   z-index: 1000;
   left: 40px;
   bottom: 40px;
-  transition: $transition;
 
-  &__video {
+  &__img {
+    display: none;
     width: 70px;
     height: 50px;
     border-radius: .5rem;
   }
-
-  &__container {
-    display: flex;
-    align-items: center;
-    padding-top: .4rem;
-
-    &__section {
-      display: none;
-      align-items: center;
-      flex-direction: column;
-      background-color: red;
-
-      &__video {
-        width: 120px;
-        height: 60px;
-        object-fit: cover;
-        border-radius: .5rem;
-      }
-    }
+  
+  &__video {
+    display: none;
+    width: 70px;
+    height: 50px;
+    border-radius: .5rem;
   }
 }
+
 
 .pop-up {
   width: 320px;

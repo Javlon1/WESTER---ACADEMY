@@ -10,14 +10,19 @@ window.addEventListener('scroll', () => {
     }
 })
 
-
+const voiceImg = document.querySelector(".voice__img")
+const voiceGif = document.querySelector(".voice__video")
 const audio = document.getElementById("myAudio"); 
  
 function toggleAudio() { 
   if (audio.paused) { 
     audio.play(); 
+    voiceImg.classList.add("actVoice")
+    voiceGif.classList.remove("actVoice")
   } else { 
     audio.pause(); 
+    voiceImg.classList.remove("actVoice")
+    voiceGif.classList.add("actVoice")
   } 
 } 
 
