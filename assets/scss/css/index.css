@@ -68,6 +68,7 @@ body {
 .voice__container {
   display: none;
   align-items: center;
+  padding-top: 0.4rem;
 }
 .voice__container__section1 {
   display: none;
@@ -1249,8 +1250,7 @@ li {
     width: 90px;
   }
   .teachers .container__top__button {
-    width: 35px;
-    height: 35px;
+    display: none;
   }
 }
 @media only screen and (max-width: 444px) {
