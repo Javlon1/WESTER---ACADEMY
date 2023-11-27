@@ -35,9 +35,11 @@
                 }
 
                 &__btn {
-                    width: 260px;
+                    text-align: center;
+                    display: block;
+                    width: 250px;
                     margin-top: 2rem;
-                    padding: .5rem 1rem;
+                    padding: .5rem 0;
                     color: $white;
                     background-color: $black;
                     border: transparent;
