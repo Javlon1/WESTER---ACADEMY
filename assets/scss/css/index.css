@@ -1148,7 +1148,8 @@ li {
     width: 90px;
   }
   .teachers .container__top__button {
-    display: none;
+    width: 35px;
+    height: 35px;
   }
 }
 @media only screen and (max-width: 444px) {
@@ -1246,12 +1247,9 @@ li {
     font-size: 30px;
   }
   .review .container__items li {
-    width: 47%;
-  }
-  .review .container__items li li {
     width: 100%;
   }
-  .review .container__items li li .video {
+  .review .container__items li .video {
     width: 100%;
     height: 426px;
     border-radius: 1rem;

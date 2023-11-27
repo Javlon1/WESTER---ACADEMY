@@ -3,7 +3,7 @@
 .review {
     padding-bottom: 30px;
 
-    .container {
+    .container {    
         &__title {
             text-align: center;
             font-size: 48px;
@@ -103,9 +103,6 @@
             }
 
             &__items {
-                li {
-                    width: 47%;
-
                     li {
                         width: 100%;
 
@@ -115,7 +112,6 @@
                             border-radius: 1rem;
                         }
                     }
-                }
             }
         }
     }

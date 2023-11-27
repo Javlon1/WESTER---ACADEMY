@@ -46,8 +46,8 @@ const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 
 const itemsCount = items.length;
-const itemWidth = container.clientWidth / slidesToShow;
-const movePosition = slidesToScroll * itemWidth;
+const itemWidth = 320 //container.clientWidth / slidesToShow;
+const movePosition = container.clientWidth === 400 ? 320 : container.clientWidth === 767? 600 : slidesToScroll * itemWidth;
 
 
 btnNext.addEventListener("click", () => {
