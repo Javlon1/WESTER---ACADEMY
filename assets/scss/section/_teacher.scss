@@ -54,37 +54,39 @@
                 transition: $transition;
 
                 &__slider {
-                    min-width: 320px;
-                    margin-left: 2rem;
-                    transition: $transition;
-                    box-shadow: 0 0 3px $black;
-                    border-radius: .5rem;
-
-                    img {
-                        width: 100%;
-                        height: 300px;
-                        object-fit: cover;
+                    &__obj {
+                        min-width: 320px;
+                        // margin-left: 2rem;
+                        transition: $transition;
+                        box-shadow: 0 0 3px $black;
                         border-radius: .5rem;
-                    }
 
-                    h4 {
-                        padding: 0 .5rem;
-                        text-align: center;
-                        margin-top: 1rem;
-                        font-style: 18px;
-                        font-weight: 500;
-                    }
+                        img {
+                            width: 100%;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: .5rem;
+                        }
 
-                    p {
-                        padding: 0 .5rem 1rem;
-                        font-size: 16px;
-                        font-weight: 500;
-                        line-height: 25px;
-                        text-align: center;
-                    }
+                        h4 {
+                            padding: 0 .5rem;
+                            text-align: center;
+                            margin-top: 1rem;
+                            font-style: 18px;
+                            font-weight: 500;
+                        }
 
-                    &:first-child {
-                        margin-left: .5rem;
+                        p {
+                            padding: 0 .5rem 1rem;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+
+                        &:first-child {
+                            margin-left: .5rem;
+                        }
                     }
                 }
             }
