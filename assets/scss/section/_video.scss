@@ -1,0 +1,13 @@
+@import "../../scss/utilities/variables";
+
+.video {
+    margin-bottom: 2rem;
+
+    .container {
+        &__objs {
+            &__video {
+                border-radius: 1rem;
+            }
+        }
+    }
+}

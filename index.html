@@ -42,7 +42,10 @@
                     </a>
                 </div>
                 <div class="container__nav__number">
-                    <a href="tel:905251243">905251243</a>
+                    <a href="tel:905251243">
+                        <img src="./assets/img/phone.svg" alt="">
+                        <span>+998 90 525 12 43</span>
+                    </a>
                 </div>
             </nav>
         </div>
@@ -59,6 +62,9 @@
                             bilan
                             IT mutaxasisiga aylaning.</h3>
                         <a class="container__list__item__btn" href="#register">Kasb tanlash</a>
+                    </div>
+                    <div class="container__list__img">
+                        <img src="./assets/img/intro.png" alt="">
                     </div>
                 </div>
             </div>
@@ -98,22 +104,28 @@
                 <h2 class="container__title">E’tibor bering !</h2>
                 <ul class="container__list">
                     <li class="container__list__item">
-                        <h3 class="container__list__item__title">Har bir o’quvchimiz uchun personal yondashuv</h3>
+                        <div class="container__list__item__div">
+                            <img src="./assets/img/bookmark.png" alt="">
+                            <p class="container__list__item__div__title">Har bir o’quvchimiz uchun personal yondashuv</p>
+                        </div>
                         <p class="container__list__item__text">Tendensiyalarga amal qilgan holatda bilimlar berish va
                             suhbat jarayonlariga tayyorlash , real loyihalarga jalb qilish, tajribaga asoslangan kasbiy
                             maslahatlar berish</p>
-                        <a class="container__list__item__link" href="#review"><i class="bi bi-plus-lg"></i></a>
                     </li>
                     <li class="container__list__item">
-                        <h3 class="container__list__item__title">Ta’limdagi ko’p yillik tajriba va unikal o’quv
+                        <h3 class="container__list__item__div__title">Ta’limdagi ko’p yillik tajriba va unikal o’quv
                             metodikalari</h3>
+                        <img src="./assets/img/5.png" alt="">
                     </li>
                     <li class="container__list__item">
-                        <h3 class="container__list__item__title">Hamkor tashkilotlarga amaliyot va ishga yo’naltirish
+                        <div class="container__list__item__div">
+                            <img src="./assets/img/mail.png" alt="">
+                            <p class="container__list__item__div__title">Hamkor tashkilotlarga amaliyot va ishga
+                                yo’naltirish
+                        </div>
                         </h3>
                         <p class="container__list__item__text">Amaliyot orqali bitiruvchi o’quvchilarni ish bilan
                             ta’minlash va ularni birinchi daromadlarini topishda ko’maklashish</p>
-                        <a class="container__list__item__link" href="#client"><i class="bi bi-plus-lg"></i></a>
                     </li>
                 </ul>
             </div>
@@ -127,6 +139,7 @@
                     <div class="list__left">
                         <p>Kursni muvafaqiyatli tamomlaganingizdan so’ng siz daromad topishingiz va jamoada ishlashingiz
                             mumkin.</p>
+                            <img src="./assets/img/kurs-bc.png" alt="">
                     </div>
                     <div class="list__right">
                         <ul class="list__right__list">
@@ -157,7 +170,6 @@
             </div>
         </section>
         <!-- Kurs-info End -->
-
 
         <!-- Kurs Start -->
         <section id="register" class="kurs">
@@ -197,6 +209,7 @@
                         </div> 
                     </div>
                 </div>
+                
                 <h2 class="container__title">Ta’lim yo’nalishlari</h2>
                 <div class="container__list">
                     <div class="container__list__item">
@@ -304,7 +317,8 @@
                     <div class="container__list__left">
                         <h3 class="container__list__left__title">Agar qaysi yo’nalishni tanlashni bilmasangiz <span>kasb
                                 aniqlovchi</span>testimizdan o’ting</h3>
-                        <a class="container__list__left__btn" href="https://wester-academy-quiz.vercel.app/" target="_blank">Testni boshlash</a>
+                        <a class="container__list__left__btn" href="https://wester-academy-quiz.vercel.app/"
+                            target="_blank">Testni boshlash</a>
                     </div>
                     <div class="container__list__right">
                         <img class="container__list__right__img" src="./assets/img/test-bc.png" alt="" loading="lazy">
@@ -415,6 +429,17 @@
             </div>
         </section>
         <!-- Teacher End -->
+
+        <!-- About-video Start -->
+        <section class="video">
+            <div class="container">
+                <div class="container__objs">
+                    <iframe class="container__objs__video" width="100%" height="452"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- About-video End -->
 
         <!-- Review Start -->
         <section id="review" class="review">
@@ -597,13 +622,15 @@
         <source src="./assets/img/voice/voice.mp3" type="audio/mp3">
         Ваш браузер не поддерживает аудио тег.
     </audio>
+
     <button class="voice">
+        <p class="textvoice">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
         <img class="voice__img actVoice" src="./assets/img/voice/voice.png" alt="">
         <img class="voice__video"
             src="https://cdn.dribbble.com/users/407851/screenshots/2718256/media/cd1bea24bdc2b82e6916458f3eea9ce6.gif"
             alt="">
     </button>
-    
+
     <!-- scroll-up Start -->
     <div class="scroll-up">
         <svg class='scroll-up__svg' viewBox='-2 -2 52 52'>
@@ -615,7 +642,6 @@
         </svg>
     </div>
     <!-- scroll-up End -->
-
 
     <!-- Footer Start -->
     <footer class="footer">

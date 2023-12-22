@@ -118,3 +118,4 @@ const popUp = () => {
 const time = 30000
 
 setTimeout(popUp, time);
+
