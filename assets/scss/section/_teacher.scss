@@ -71,6 +71,7 @@
                             width: 100%;
                             height: 300px;
                             object-fit: cover;
+                            background-color: #000;
                         }
 
                         h4 {
@@ -96,7 +97,7 @@
                         &:hover {
                             min-width: 310px;
                             height: 470px;
-                            background-color: #21D789;
+                            background-color: $black;
                             border-radius: 0.5rem;
 
                             .slider-container__list__slider__obj__img1 {
@@ -106,9 +107,17 @@
                             .slider-container__list__slider__obj__img2 {
                                 display: block !important;
                             }
+                            h4 {
+                                color: $white;
+                            }
+    
+                            p {
+                                color: $white;
+                            }
 
                             img {
                                 height: 70%;
+                                background-color: #21D789;
                             }
                         }
                     }

@@ -1434,6 +1434,7 @@ li {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #000;
 }
 .teachers .container .slider-container__list__slider__obj h4 {
   padding: 0 0.5rem;
@@ -1455,7 +1456,7 @@ li {
 .teachers .container .slider-container__list__slider__obj:hover {
   min-width: 310px;
   height: 470px;
-  background-color: #21D789;
+  background-color: #292929;
   border-radius: 0.5rem;
 }
 .teachers .container .slider-container__list__slider__obj:hover .slider-container__list__slider__obj__img1 {
@@ -1464,8 +1465,15 @@ li {
 .teachers .container .slider-container__list__slider__obj:hover .slider-container__list__slider__obj__img2 {
   display: block !important;
 }
+.teachers .container .slider-container__list__slider__obj:hover h4 {
+  color: #fff;
+}
+.teachers .container .slider-container__list__slider__obj:hover p {
+  color: #fff;
+}
 .teachers .container .slider-container__list__slider__obj:hover img {
   height: 70%;
+  background-color: #21D789;
 }
 .teachers .container .slider-container__list__slider:first-child {
   margin-left: 0;
