@@ -93,7 +93,7 @@
     .intro {
         .container {
             &__list {
-                padding: 2.1rem 1.5rem;
+                padding: 1rem;
 
                 &__item {
                     width: 100%;
@@ -122,9 +122,9 @@
                 &__item {
 
                     &__title {
-                        font-size: 1.5rem;
+                        font-size: 20px;
                         font-weight: 600;
-                        line-height: 32px;
+                        line-height: 28px;
                     }
                 }
             }

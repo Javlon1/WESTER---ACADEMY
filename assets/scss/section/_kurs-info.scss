@@ -54,8 +54,8 @@
 
                         a {
                             display: block;
-                            width: 40px;
-                            height: 40px;
+                            width: 35px;
+                            height: 35px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -63,8 +63,8 @@
                             border-radius: 50%;
                             background-color: $black;
                             position: absolute;
-                            right: 1rem;
-                            bottom: 1rem;
+                            right: .8rem;
+                            bottom: .8rem;
                         }
 
                         b {
@@ -103,12 +103,6 @@
                                 color: $white;
                             }
                         }
-
-                        // &:nth-child(2){
-                        //     background-image: url("../../img/");
-                        //     background-repeat: no-repeat;
-                        //     background-position: top right;
-                        // }
                     }
                 }
             }
@@ -142,6 +136,7 @@
                 &__left {
                     width: 100%;
                     height: 250px;
+                    padding: 1rem;
 
                     img {
                         width: 250px;
@@ -209,40 +204,16 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 464px) {
     .kurs-info {
         .container {
             .list {
-                &__left {
-                    img {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
+                padding: 1rem;
 
-@media only screen and (max-width: 410px) {
-    .kurs-info {
-        .container {
-            .list {
-                &__left {
-                    height: auto;
-                }
-            }
-        }
-    }
-}
-
-
-@media only screen and (max-width: 380px) {
-    .kurs-info {
-        .container {
-            .list {
                 &__left {
                     p {
                         font-size: 20px;
+                        line-height: 1.7rem;
                     }
                 }
             }

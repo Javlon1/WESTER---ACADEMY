@@ -74,14 +74,14 @@
                     &__div {
                         display: flex;
                         align-items: center;
-    
+
                         img {
                             width: 90px;
                             height: 90px;
                         }
-    
+
                         &__title {
-                            font-size: 1.35rem;
+                            font-size: 20px;
                             font-weight: 600;
                             line-height: 1.7rem;
                         }
@@ -95,25 +95,6 @@
         }
     }
 }
-
-@media only screen and (max-width: 1199px) {
-    .attention {
-        .container {
-            &__list {
-                &__item {
-                    &__title {
-                        font-size: 1.35rem;
-                    }
-
-                    &__text {
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 @media only screen and (max-width: 991px) {
     .attention {
@@ -152,6 +133,11 @@
                     margin-top: 20px;
                     width: 100%;
                     height: 300px;
+                    padding: 1rem;
+
+                    &__text {
+                        line-height: 25px;
+                    }
                 }
             }
         }
