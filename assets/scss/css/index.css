@@ -1392,14 +1392,14 @@ li {
   width: 45px;
   height: 45px;
   color: #292929;
+  font-size: 1.5rem;
   border-radius: 50%;
   border: 1px solid #292929;
   background-color: #fff;
   transition: 0.5s all ease;
 }
 .teachers .container__top__button:hover {
-  color: #fff;
-  background-color: #292929;
+  background-color: #21D789;
 }
 .teachers .container .slider-container {
   overflow: scroll;
@@ -1408,24 +1408,28 @@ li {
   display: none;
 }
 .teachers .container .slider-container__list {
-  height: 450px;
+  height: 470px;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   transition: 0.5s all ease;
+  transition: 1s all ease;
+}
+.teachers .container .slider-container__list__slider {
+  margin-left: 3rem;
 }
 .teachers .container .slider-container__list__slider__obj {
-  min-width: 320px;
+  min-width: 260px;
   transition: 0.5s all ease;
-  box-shadow: 0 0 3px #292929;
   border-radius: 0.5rem;
+  background-color: #EFFFFB;
+  overflow: hidden;
 }
 .teachers .container .slider-container__list__slider__obj img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0.5rem;
 }
 .teachers .container .slider-container__list__slider__obj h4 {
   padding: 0 0.5rem;
@@ -1443,6 +1447,18 @@ li {
 }
 .teachers .container .slider-container__list__slider__obj:first-child {
   margin-left: 0.5rem;
+}
+.teachers .container .slider-container__list__slider__obj:hover {
+  min-width: 310px;
+  height: 470px;
+  background-color: #21D789;
+  border-radius: 0.5rem;
+}
+.teachers .container .slider-container__list__slider__obj:hover img {
+  height: 70%;
+}
+.teachers .container .slider-container__list__slider:first-child {
+  margin-left: 0;
 }
 
 @media only screen and (max-width: 1399px) {
