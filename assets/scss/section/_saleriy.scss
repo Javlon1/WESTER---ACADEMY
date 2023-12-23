@@ -1,0 +1,180 @@
+.saleriy {
+    padding-top: 1rem;
+    padding-bottom: 50px;
+
+    .container {
+        &__title {
+            font-size: 35px;
+            font-weight: 700;
+            color: $black;
+            max-width: 490px;
+        }
+
+        &__subtitle {
+            font-size: 25px;
+            color: $black;
+            margin: 1.2rem 0;
+        }
+
+        &__text {
+            width: 75%;
+            font-size: 13px;
+            font-weight: 600;
+            color: $black;
+            background-color: #EEFBF8;
+            margin-top: .7rem;
+            padding: .5rem;
+            border-radius: .5rem;
+        }
+
+        &__avarage {
+            margin-top: 2.2rem;
+            font-size: 26px;
+            font-weight: 600;
+            color: #3F3F3F;
+        }
+
+        &__avaragedesc {
+            font-size: 17px;
+            font-weight: 500;
+            color: #3F3F3F;
+        }
+
+        &__link {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            color: #00000080;
+
+            a {
+                font-weight: 600;
+                margin-left: .5rem;
+                color: #00000080;
+                text-decoration: underline;
+            }
+        }
+
+        &__list {
+            &__item {
+                width: 45%;
+                margin-top: 1.3rem;
+                background-color: #F5F5F5;
+                border-radius: 1rem;
+                padding: 1rem;
+
+                h3 {
+                    color: #3F3F3F;
+                    font-size: 38px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #000000D9;
+                }
+
+                &:nth-child(2) {
+                    width: 70%;
+
+                    h3 {
+                        color: #E7C13D;
+                    }
+                }
+
+                &:nth-child(3) {
+                    width: 90%;
+
+                    h3 {
+                        color: #21D789;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .saleriy {
+        .container {
+            &__title {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            &__subtitle {
+                font-size: 20px;
+            }
+
+            &__text {
+                width: 100%;
+            }
+
+            &__avarage {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            &__avaragedesc {
+                font-size: 15px;
+            }
+
+            &__list {
+                &__item {
+                    width: 50%;
+
+                    h3 {
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+
+                    &:nth-child(2) {
+                        width: 80%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .saleriy {
+        .container {
+            &__title {
+                font-size: 25px;
+            }
+
+            &__subtitle {
+                font-size: 1rem;
+            }
+
+            &__avarage {
+                font-size: 20px;
+            }
+
+            &__list {
+                &__item {
+                    width: 55%;
+
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 85%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

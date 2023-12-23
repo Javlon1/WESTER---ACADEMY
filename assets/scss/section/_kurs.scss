@@ -126,6 +126,10 @@
                     justify-content: space-between;
                     flex-wrap: wrap;
 
+                    &__img2 {
+                        display: none;
+                    }
+
                     img {
                         width: 120px;
                         height: 57px;
@@ -153,6 +157,7 @@
                     position: absolute;
                     right: 1rem;
                     bottom: 1rem;
+                    transition: $transition;
                 }
 
                 &:first-child {
@@ -164,21 +169,38 @@
                 }
 
                 &:hover {
-                    background-color: #272726;
-                    box-shadow: 0 0 10px #272726;
+                    .container__list {
+                        &__item {
+                            background-color: #272726;
+                            box-shadow: 0 0 10px #272726;
 
-                    &__title {
-                        color: $white;
-                    }
+                            &__title {
+                                color: $white;
+                            }
 
-                    &__teach {
-                        p {
-                            color: $white;
+                            &__teach {
+
+                                &__img1 {
+                                    display: none;
+                                }
+
+                                &__img2 {
+                                    display: block;
+                                }
+
+                                p {
+                                    color: $white;
+                                }
+                            }
+
+                            &__link {
+                                background-color: #21D789;
+
+                                &:hover {
+                                    box-shadow: 0 0 10px #21D789;
+                                }
+                            }
                         }
-                    }
-
-                    &__link {
-                        background-color: red;
                     }
                 }
             }
@@ -230,10 +252,11 @@
 @media only screen and (max-width: 767px) {
     .kurs {
         .container {
-            &__title{
+            &__title {
                 font-size: 30px;
                 margin: 0;
             }
+
             &__list {
                 margin: 0;
 

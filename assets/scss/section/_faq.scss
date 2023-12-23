@@ -14,20 +14,60 @@
 
         .butt {
             color: $black;
-            background-color: $white;
+            border-radius: 1rem;
+            background-color: $gray;
             border: none;
             height: 70px;
             width: 100%;
             text-align: start;
-            padding-left: 1rem;
+            padding: 1rem;
             border-bottom: 1px solid $gray;
             font-size: 19px;
             font-weight: 500;
             line-height: 24px;
             letter-spacing: 0em;
             text-align: left;
+            transition: $transition;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                width: 35px;
+                height: 35px;
+                font-size: 1.7rem;
+                font-weight: 400;
+                border-radius: 50%;
+                color: $black;
+                background-color: #D9D9D9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: $transition;
+            }
+
+            &:hover {
+                background-color: #21D789;
+
+                p {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
         }
     }
+}
+
+.accordion-item {
+    margin-top: .8rem;
+    border-radius: 1rem;
+    border: none !important;
+}
+
+.accordion-body {
+    margin-top: .2rem;
+    background-color: $gray;
+    border-radius: 1rem;
 }
 
 @media only screen and (max-width: 991px) {
@@ -44,7 +84,12 @@
 }
 
 .myActivee {
-    color: $white !important;
-    background-color: $black !important;
+    color: $black !important;
+    background-color: #21D789 !important;
     outline: none;
+
+    p {
+        background-color: $black !important;
+        color: $white !important;
+    }
 }
