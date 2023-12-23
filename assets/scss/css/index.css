@@ -1426,6 +1426,9 @@ li {
   background-color: #EFFFFB;
   overflow: hidden;
 }
+.teachers .container .slider-container__list__slider__obj__img2 {
+  display: none;
+}
 .teachers .container .slider-container__list__slider__obj img {
   width: 100%;
   height: 300px;
@@ -1455,6 +1458,12 @@ li {
   height: 470px;
   background-color: #292929;
   border-radius: 1.3rem;
+}
+.teachers .container .slider-container__list__slider__obj:hover .slider-container__list__slider__obj__img1 {
+  display: none;
+}
+.teachers .container .slider-container__list__slider__obj:hover .slider-container__list__slider__obj__img2 {
+  display: block;
 }
 .teachers .container .slider-container__list__slider__obj:hover h4 {
   color: #fff;
