@@ -48,12 +48,13 @@ body {
   background-color: red;
 }
 .voice .textvoice {
+  width: 450px;
   display: none;
   top: -3rem;
   position: absolute;
   background-color: #fff;
   box-shadow: 0 0 3px #000;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -796,7 +797,7 @@ li {
 .kurs .container__list__item:nth-child(2) {
   width: 49%;
 }
-.kurs .container__list__item:hover .container__list__item {
+.kurs .container__list__item:hover {
   background-color: #272726;
   box-shadow: 0 0 10px #272726;
 }
