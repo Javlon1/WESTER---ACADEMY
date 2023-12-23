@@ -63,7 +63,7 @@ const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 
 const itemsCount = items.length;
-const itemWidth = 320 //container.clientWidth / slidesToShow;
+const itemWidth = 370 //container.clientWidth / slidesToShow;
 const movePosition = container.clientWidth === 400 ? 320 : container.clientWidth === 767 ? 600 : slidesToScroll * itemWidth;
 
 

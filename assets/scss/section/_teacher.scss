@@ -63,6 +63,10 @@
                         background-color: #EFFFFB;
                         overflow: hidden;
 
+                        &__img2 {
+                            display: none;
+                        }
+
                         img {
                             width: 100%;
                             height: 300px;
@@ -94,6 +98,14 @@
                             height: 470px;
                             background-color: #21D789;
                             border-radius: 0.5rem;
+
+                            .slider-container__list__slider__obj__img1 {
+                                display: none;
+                            }
+
+                            .slider-container__list__slider__obj__img2 {
+                                display: block !important;
+                            }
 
                             img {
                                 height: 70%;

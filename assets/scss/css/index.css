@@ -797,7 +797,7 @@ li {
 .kurs .container__list__item:nth-child(2) {
   width: 49%;
 }
-.kurs .container__list__item:hover {
+.kurs .container__list__item:hover .container__list__item {
   background-color: #272726;
   box-shadow: 0 0 10px #272726;
 }
@@ -1426,6 +1426,9 @@ li {
   background-color: #EFFFFB;
   overflow: hidden;
 }
+.teachers .container .slider-container__list__slider__obj__img2 {
+  display: none;
+}
 .teachers .container .slider-container__list__slider__obj img {
   width: 100%;
   height: 300px;
@@ -1454,6 +1457,12 @@ li {
   height: 470px;
   background-color: #21D789;
   border-radius: 0.5rem;
+}
+.teachers .container .slider-container__list__slider__obj:hover .slider-container__list__slider__obj__img1 {
+  display: none;
+}
+.teachers .container .slider-container__list__slider__obj:hover .slider-container__list__slider__obj__img2 {
+  display: block !important;
 }
 .teachers .container .slider-container__list__slider__obj:hover img {
   height: 70%;
