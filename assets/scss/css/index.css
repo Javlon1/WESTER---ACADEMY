@@ -914,7 +914,7 @@ li {
   width: 49%;
 }
 
-.kurs .container__list__item:hover .container__list__item {
+.kurs .container__list__item:hover  {
   background-color: #272726;
   box-shadow: 0 0 10px #272726;
 }
